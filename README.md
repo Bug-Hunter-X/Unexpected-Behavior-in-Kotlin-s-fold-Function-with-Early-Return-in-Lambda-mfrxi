@@ -1,0 +1,3 @@
+This repository demonstrates an uncommon bug in Kotlin involving the `fold` function and early returns within lambda expressions.  The bug arises when using a `return` statement inside the lambda passed to the `fold` function. This `return` statement does not return from the `fold` operation, but from the lambda itself, resulting in unexpected behavior.
+
+The `bug.kt` file showcases this bug. The `bugSolution.kt` provides a corrected version using a local variable and conditional logic to avoid the premature return from the lambda.
